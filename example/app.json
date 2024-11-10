@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "expo-geofencing-batch-plugin-example",
+    "slug": "expo-geofencing-batch-plugin-example",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "expo.modules.geofencingbatchplugin.example"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "expo.modules.geofencingbatchplugin.example"
+    },
+    "plugins": [["../app.plugin.js", { "apiKey": "woosmap key", "locationAlwaysAndWhenInUsePermission":"app Location new" }]]
+  }
+}
