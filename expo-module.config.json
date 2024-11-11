@@ -1,10 +1,6 @@
 {
   "platforms": ["ios", "android"],
   "ios": {
-    "modules": ["ExpoGeofencingBatchPluginModule"],
     "appDelegateSubscribers": ["WoosmapGeofenceAppDelegate"]
-  },
-  "android": {
-    "modules": ["expo.modules.geofencingbatchplugin.ExpoGeofencingBatchPluginModule"]
   }
 }

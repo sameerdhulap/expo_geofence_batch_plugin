@@ -4,30 +4,30 @@
   "description": "Woosmap geofence batch integration",
   "main": "build/index.js",
   "types": "build/index.d.ts",
-  "scripts": {
-    "build": "expo-module build",
-    "clean": "expo-module clean",
-    "lint": "expo-module lint",
-    "test": "expo-module test",
-    "prepare": "expo-module prepare",
-    "prepublishOnly": "expo-module prepublishOnly",
-    "expo-module": "expo-module",
-    "open:ios": "xed example/ios",
-    "open:android": "open -a \"Android Studio\" example/android"
-  },
+  "sideEffects": false,
   "keywords": [
     "react-native",
     "expo",
     "expo-geofencing-batch-plugin",
     "ExpoGeofencingBatchPlugin"
   ],
-  "repository": "https://github.com/Woosmap/geofencing-react-native-plugin",
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Woosmap/geofencing-react-native-plugin.git"
+  },
   "bugs": {
     "url": "https://github.com/Woosmap/geofencing-react-native-plugin/issues"
   },
-  "author": "sameer dhulap <28100769+sameerdhulap@users.noreply.github.com> (https://github.com/Woosmap/geofencing-react-native-plugin)",
+  "author": "Woosmap <operations@woosmap.com> (https://www.woosmap.com/en/contact)",
   "license": "MIT",
   "homepage": "https://github.com/Woosmap/geofencing-react-native-plugin#readme",
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {},
   "devDependencies": {
     "@types/react": "^18.0.25",
