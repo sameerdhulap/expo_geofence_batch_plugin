@@ -57,3 +57,4 @@ yarn-error.log
 .expo/*
 package-lock.json
 plugin/tsconfig.tsbuildinfo
+.eslintrc.js
