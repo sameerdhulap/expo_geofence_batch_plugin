@@ -6,7 +6,7 @@ module.exports = async (env, argv) => {
     {
       ...env,
       babel: {
-        dangerouslyAddModulePathsToTranspile: ['expo-geofencing-batch-plugin'],
+        dangerouslyAddModulePathsToTranspile: ['@woosmap/expo-geofencing-batch-plugin'],
       },
     },
     argv

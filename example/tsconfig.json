@@ -3,8 +3,8 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "expo-geofencing-batch-plugin": ["../src/index"],
-      "expo-geofencing-batch-plugin/*": ["../src/*"]
+      "@woosmap/expo-geofencing-batch-plugin": ["../src/index"],
+      "@woosmap/expo-geofencing-batch-plugin/*": ["../src/*"]
     }
   }
 }
