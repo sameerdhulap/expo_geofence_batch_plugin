@@ -1,4 +1,4 @@
-import { ConfigPlugin, createRunOncePlugin } from "expo/config-plugins";
+import { ConfigPlugin, createRunOncePlugin } from "@expo/config-plugins";
 
 import { withAndroidSdk } from "./configWoosmapGeofenceAndroid";
 import { withIOSSdk } from "./configWoosmapGeofenceiOS";

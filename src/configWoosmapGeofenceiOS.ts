@@ -1,4 +1,4 @@
-import { ConfigPlugin, withInfoPlist, IOSConfig } from "expo/config-plugins";
+import { ConfigPlugin, withInfoPlist, IOSConfig } from "@expo/config-plugins";
 
 import { ConfigProps } from "./types";
 const LOCATION_USAGE = "Allow $(PRODUCT_NAME) to access your location";
