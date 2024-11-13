@@ -2,18 +2,12 @@
 
 Woosmap geofencing batch integration
 
+@woosmap/expo-geofencing-batch-plugin is a [config plugin](https://docs.expo.dev/config-plugins/introduction/) to customize native build properties when using [npx expo prebuild](https://docs.expo.dev/workflow/prebuild/).
+
 # API documentation
 
 - [Documentation for the main branch](https://github.com/expo/expo/blob/main/docs/pages/versions/unversioned/sdk/geofencing-batch-plugin.md)
 - [Documentation for the latest stable release](https://docs.expo.dev/versions/latest/sdk/geofencing-batch-plugin/)
-
-# Installation in managed Expo projects
-
-For [managed](https://docs.expo.dev/archive/managed-vs-bare/) Expo projects, please follow the installation instructions in the [API documentation for the latest stable release](#api-documentation). If you follow the link and there is no documentation available then this library is not yet usable within managed projects &mdash; it is likely to be included in an upcoming Expo SDK release.
-
-# Installation in bare React Native projects
-
-For bare React Native projects, you must ensure that you have [installed and configured the `expo` package](https://docs.expo.dev/bare/installing-expo-modules/) before continuing.
 
 ### Add the package to your npm dependencies
 
@@ -21,14 +15,22 @@ For bare React Native projects, you must ensure that you have [installed and con
 npm install @woosmap/expo-geofencing-batch-plugin
 ```
 
-### Configure for iOS
+Add plugin to `app.json`. For example:
 
-Run `npx pod-install` after installing the npm package.
-
-
-### Configure for Android
-
-
+``` javascript
+"plugins": [
+      ...,
+      [
+        "@woosmap/expo-geofencing-batch-plugin",
+        {
+          "apiKey": "woosmap private key",
+          "locationAlwaysAndWhenInUsePermission": "app Location permission",
+          "locationAlwaysPermission": "app Location always",
+          "locationWhenInUsePermission": "app Location when in use",
+        }
+      ]
+    ]
+```
 
 # Contributing
 
