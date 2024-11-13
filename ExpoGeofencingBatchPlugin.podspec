@@ -1,6 +1,6 @@
 require 'json'
 
-package = JSON.parse(File.read(File.join(__dir__, '..', 'package.json')))
+package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 
 Pod::Spec.new do |s|
   s.name           = 'ExpoGeofencingBatchPlugin'
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage       = package['homepage']
   s.platforms      = { :ios => '13.4', :tvos => '13.4' }
   s.swift_version  = '5.4'
-  s.source         = { git: 'https://github.com/Woosmap/geofencing-react-native-plugin' }
+  s.source         = { git: '' }
   s.static_framework = true
 
   s.dependency 'ExpoModulesCore'
@@ -25,5 +25,5 @@ Pod::Spec.new do |s|
     'SWIFT_COMPILATION_MODE' => 'wholemodule'
   }
 
-  s.source_files = "**/*.{h,m,swift}"
+  s.source_files = "ios/*.{h,m,swift}"
 end
